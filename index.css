@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css?family=Cookie|Niconne');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow');
+
+:root{
+  font-size: 14px;
+  /*font-family: 'PT Sans Narrow', sans-serif;*/
+  font-family: 'Cookie', cursive;
+ 
+}
+body {
+ margin: 0;
+ padding: 0;
+}
+section{
+	width: 100%;
+	height: 100vh;
+}
+section.sec1{
+	background: url(images/p1.jpg);
+background-size: cover;
+background-attachment: fixed;
+}
+section.sec2{
+background: url(images/p3.jpg);
+background-size: cover;
+background-attachment: fixed;
+}
+.con{
+  background: #c0392b;
+}
+.con .banner > p{
+  text-align: center;
+  color: white;
+  font-size: 1.8em;
+}
+.con .banner > h1{
+  text-align: center;
+  color: #f1c40f;
+  font-size: 2.5em;
+}
+.con .banner > img{
+  border: 2px solid black;
+  border-radius: 15em;
+  height: 18em;
+  width: 18em;
+
+}
+.con1{
+  background:#E5330D;
+}
+.con2{
+background: #A7280E;
+}
+.con3{
+  background:#AC4C38;
+}
+.con3 .link .contact1 > h1{
+   font-size: 2.5em;
+   color: white;
+}
+.con3 .link .contact1 > a{
+  font-size: 1.5em;
+  color:#f1c40f;
+}
+.con3 .link .contact2 > h1{
+   font-size: 2.5em;
+   color: white;
+}
+.con3 .link .contact2 > a{
+  font-size: 1.5em;
+  color:#f1c40f;
+}
+.con2 .heading1 > h1{
+  font-size: 2.5em;
+  color:white;
+}
+.con2 .content1 > p{
+  font-size: 2em;
+  color: #f1c40f;
+  text-align: center;
+
+}
+.container .con{
+  margin: 0;
+  padding: 0;
+
+}
+
+.grid .cell{
+  border: 1px solid black;
+}
+.cell {
+  margin: 1rem;
+  background-color: #1c1c28;
+
+  width: 240px;
+	height: 370px;
+	background: #f39c12;
+  box-sizing: border-box;
+  padding: 20px;
+	transition: .5s;
+	overflow: hidden;
+}
+.cell i,p{
+	margin: 0;
+	padding: 0;
+	color: #7f8c8d;
+
+	font-size: 14px;
+	transition: .5s;
+	transition-delay: .5s;
+	transform: scale(.8);
+}
+.cell:before{
+	content: '';
+	position: absolute;
+	width: 0%;
+	height: 0%;
+	top: 0;
+	left: 0;
+	border-top: 2px solid #fff;
+		border-left: 2px solid #fff;
+}
+.cell:after{
+	content: '';
+	position: absolute;
+	width: 0%;
+	height: 0%;
+	top: 0;
+	left: 0;
+	border-bottom: 2px solid #7f8c8d;
+		border-right: 2px solid #7f8c8d;
+		opacity: 0;
+		transition: .5s;
+		box-sizing: border-box;
+}
+.cell:hover:before{
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+
+}
+.cell:hover:after{
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+}
+.cell:hover p{
+	transform: scale(1);
+}
+.cell:hover{
+	box-shadow: 0 25px 30px rgba(0,0,0,.5);
+}
+.cell > i{
+  font-size: 7em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.cell > p{
+  color: white;
+  font-size: 1.7em;
+  text-align: center;
+  padding-bottom: 50%;
+}
+.con1 .title >h1{
+  font-size: 3.5em;
+  color: white;
+}
+.banner{
+	margin-bottom: 40px;
+}
+
+.banner img{
+	width: 100%;
+	filter: grayscale(100%);
+	transition: 0.4s all;
+}
+.banner:hover > img{
+	filter: none;
+}
+a{
+	text-decoration: none;
+}
